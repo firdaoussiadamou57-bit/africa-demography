@@ -19,8 +19,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 # Chemin vers le fichier de données (relatif à la racine du projet)
-import os
-DATA_PATH = Path(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "africa_indicator_2016_2025.xlsx"))
+DATA_PATH = Path("data/africa_indicator_2016_2025.xlsx")
 
 # Années couvertes par les données disponibles
 YEARS = [str(y) for y in range(2016, 2024)]
