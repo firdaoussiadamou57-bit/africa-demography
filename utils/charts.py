@@ -272,14 +272,14 @@ def plot_comparison_radar(wide: pd.DataFrame,
                 values.append(round(norm * 100, 1))
 
         fig.add_trace(go.Scatterpolar(
-            r=values + [values[0]],
-            theta=labels_fr + [labels_fr[0]],
-            fill="toself",
-            name=country,
-            line_color=colors[i % len(colors)],
-            fillcolor=colors[i % len(colors)].replace(")", ",0.15)").replace("rgb", "rgba")
-                        if "rgb" in colors[i % len(colors)] else colors[i % len(colors)] + "26",
-        ))
+    r=values + [values[0]],
+    theta=labels_fr + [labels_fr[0]],
+    fill="toself",
+    name=country,
+    line_color=colors[i % len(colors)],
+    fillcolor="rgba(245,166,35,0.15)",
+    opacity=0.6,
+))
 
     fig.update_layout(
         polar=dict(
