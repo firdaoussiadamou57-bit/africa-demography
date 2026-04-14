@@ -1,0 +1,24 @@
+# =============================================================================
+# requirements.txt
+# Projet : Analyse démographique africaine
+# =============================================================================
+
+# Traitement des données
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0        # Lecture fichiers Excel
+
+# Statistiques
+scipy>=1.10.0
+
+# Visualisations
+plotly>=5.15.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Application web
+streamlit>=1.28.0
+
+# Notebook (optionnel)
+jupyter>=1.0.0
+ipykernel>=6.0.0
